@@ -1,0 +1,64 @@
+body {
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    background-image: url('https://cdn.glitch.global/403ed8f8-ef31-4aad-8db1-1f27583a5bb5/fundo%20background%20transp.jpg?v=1697656969420');
+    background-size: auto;
+    background-position: center;
+    background-size: cover; /* A imagem de fundo cobrirá toda a tela */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#welcome-screen, 
+#game-screen, 
+#result-screen {
+    margin: 10px;
+}
+
+input[type="text"], input[type="radio"] {
+    margin: 1px;
+}
+
+button {
+    margin: 3px;
+    padding: 7px 15px;
+    background-color: #de8a6e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #b24b28;
+}
+
+button:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.answer-option {
+    background-color: #2eb82e; /* Cor de fundo desejada para as opções de resposta */
+    padding: 5px; /* Espaçamento interno para destacar visualmente */
+    margin: 5px; /* Espaçamento externo para melhorar o layout */
+}
+
+/* Estilo para respostas corretas */
+.correct-answer {
+    background-color: green;
+    color: white;
+}
+
+/* Estilo para respostas incorretas */
+.wrong-answer {
+    background-color: red;
+    color: white;
+}
+.correct-answer-background {
+    background-color: green;
+}
+
+
+

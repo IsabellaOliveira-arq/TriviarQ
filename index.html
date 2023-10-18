@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Bem-vindo ao TríviarQ!</h1>
+        <p>Qual é seu nome:</p>
+        <input type="text" id="player-name">
+        <button onclick="startGame()">Começar</button>
+    </div>
+  <img src="https://cdn.glitch.global/403ed8f8-ef31-4aad-8db1-1f27583a5bb5/teste.png?v=1697500454518" alt="logomarca" style="margin-top: 10px; margin-bottom: 20px; margin-left: 3px; margin-right: 15px;">
+
+    <div id="game-screen" style="display: none;">
+        <h2>Olá, <span id="player-name-display"></span>!</h2>
+      
+ <div id="question-container-1">
+        <h3>Q.1: Quem pintou o teto da capela sistina?</h3>
+        <input type="radio" name="q1" value="A">A) Michelangelo<br>
+        <input type="radio" name="q1" value="B">B) Leonardo Da Vinci<br>
+        <input type="radio" name="q1" value="C">C) Sandro Botticelli<br>
+    </div>
+
+    <div id="question-container-2">
+        <h3>Q.2: Qual dessas obras arquitetônicas brasileiras é uma das Sete Maravilhas do Mundo Moderno?</h3>
+        <input type="radio" name="q2" value="A">A) Palácio da Alvorada<br>
+        <input type="radio" name="q2" value="B">B) Elevador Lacerda<br>
+        <input type="radio" name="q2" value="C">C) Cristo Redentor<br>
+    </div>
+
+    <div id="question-container-3">
+        <h3>Q.3: Qual era o nome de Aleijadinho?</h3>
+        <input type="radio" name="q3" value="A">A) Francisco Antônio Lisboa<br>
+        <input type="radio" name="q3" value="B">B) Antônio Francisco Lisboa<br>
+        <input type="radio" name="q3" value="C">C) Alexandrino Francisco Lisboa<br>
+    </div>
+      
+    <button onclick="submitAnswers()">Verificar Respostas</button>
+      
+    </div>
+
+    <div id="result-screen" style="display: none;">
+        <h2>E o score final foi de...</h2>
+        <p>Certas: <span id="correct-answers"></span></p>
+        <p>Erradas: <span id="wrong-answers"></span></p>
+      
+        <button onclick="restartGame()">Tente Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
