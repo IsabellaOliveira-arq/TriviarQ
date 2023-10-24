@@ -44,6 +44,10 @@ O código é dividido em três partes: HTML, JS e CSS.
 - </body>: Fecha a seção do corpo.
 - </html>: Fecha a tag raiz do documento HTML.
 - O código HTML cria a página da web com a tela de boas-vindas seguida da tela de jogo com perguntas e as opções de resposta finalizando com a tela de resultados. A interatividade é implementada usando JavaScript no arquivo "script.js".
+
+```html
+
+```javascript
   
 ### JAVASCRIPT 
   
@@ -70,7 +74,10 @@ O código é dividido em três partes: HTML, JS e CSS.
   
 ### Função resetRadioButtons(question):
 - Esta função é usada para desmarcar todos os botões de seleção de resposta para uma pergunta específica. Ela é chamada na função restartGame() para garantir que as respostas selecionadas sejam desmarcadas quando o jogo é reiniciado.
-  
+
+```javascript
+
+
 ### CSS
 - body: Esta seção define o estilo para o elemento <body>, que é o elemento principal de uma página HTML.
 - font-family: Define a fonte do texto dentro do elemento <body>. Neste caso, a fonte é "Verdana" e, se "Verdana" não estiver disponível, a página usará uma fonte genérica "sans-serif".
