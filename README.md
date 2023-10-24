@@ -46,7 +46,9 @@ O código é dividido em três partes: HTML, JS e CSS.
 - O código HTML cria a página da web com a tela de boas-vindas seguida da tela de jogo com perguntas e as opções de resposta finalizando com a tela de resultados. A interatividade é implementada usando JavaScript no arquivo "script.js".
 
   
-### JAVASCRIPT 
+### JAVASCRIPT
+
+```javascript
   
 ### Declaração de Variáveis:
 - playerName: Uma variável que será usada para armazenar o nome do jogador.
