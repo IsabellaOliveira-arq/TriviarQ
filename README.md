@@ -20,7 +20,7 @@ O código é dividido em três partes: HTML, JS e CSS.
 
 ### HTML
 
-- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se <!DOCTYPE html>, que é o que define o tipo de HTML.
+- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se '<!DOCTYPE html>', que é o que define o tipo de HTML.
 - <html>: Abre a tag raiz do documento HTML.
 - <head>: Aqui começa a seção do cabeçalho da página. Geralmente, informações como metadados, links para arquivos CSS e outros elementos relacionados ao documento são definidos dentro desta seção.
 - <link rel="stylesheet" type="text/css" href="style.css">: Este elemento <link> é usado para vincular um arquivo CSS externo à página. Ele está referenciando o arquivo "style.css" que será usado para dar estilo a página.
