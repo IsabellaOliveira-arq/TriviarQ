@@ -19,15 +19,11 @@ O objetivo deste desafio é criar um jogo de trivia sobre arquitetura com três 
 O código é dividido em três partes: HTML, JS e CSS.
 
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
-
 ### HTML
 
-- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se (<!DOCTYPE html>), que é o que define o tipo de HTML.
+```html
+
+- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se <!DOCTYPE html>, que é o que define o tipo de HTML.
 - <html>: Abre a tag raiz do documento HTML.
 - <head>: Aqui começa a seção do cabeçalho da página. Geralmente, informações como metadados, links para arquivos CSS e outros elementos relacionados ao documento são definidos dentro desta seção.
 - <link rel="stylesheet" type="text/css" href="style.css">: Este elemento <link> é usado para vincular um arquivo CSS externo à página. Ele está referenciando o arquivo "style.css" que será usado para dar estilo a página.
@@ -95,8 +91,3 @@ function test() {
 - .correct-answer-background: Define o estilo para elementos com a classe "correct-answer-background". Eles têm uma cor de fundo verde.
 - As regras CSS são aplicadas aos elementos HTML com base em suas classes e IDs, permitindo personalizar a aparência da página da web.
 
-- ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
