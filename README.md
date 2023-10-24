@@ -21,12 +21,10 @@ O código é dividido em três partes: HTML, JS e CSS.
 
 ### HTML
 
-```html
-
-- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se <!DOCTYPE html>, que é o que define o tipo de HTML.
+- Para dar start ao processo de construção do Triviarq, passamos pela base do site, o HTML, onde para dar se início, usa-se (<!DOCTYPE html>), que é o que define o tipo de HTML.
 - <html>: Abre a tag raiz do documento HTML.
 - <head>: Aqui começa a seção do cabeçalho da página. Geralmente, informações como metadados, links para arquivos CSS e outros elementos relacionados ao documento são definidos dentro desta seção.
-- <link rel="stylesheet" type="text/css" href="style.css">: Este elemento <link> é usado para vincular um arquivo CSS externo à página. Ele está referenciando o arquivo "style.css" que será usado para dar estilo a página.
+- <link rel="stylesheet" type="text/css" href="style.css">: Este elemento <link> é usado para vincular um arquivo CSS externo à página. Ele está referenciando o arquivo "style.css" que será usado para dar estilo à página.
 - </head>: Fecha a seção do cabeçalho.
 - <body>: Inicia a seção do corpo da página. Tudo o que é mostrado na página estará dentro desta seção.
 - <div id="welcome-screen">: Define uma divisão (div) com o ID "welcome-screen". Este será o primeiro elemento visível na página.
@@ -48,31 +46,32 @@ O código é dividido em três partes: HTML, JS e CSS.
   
 ### JAVASCRIPT
 
-```javascript
-  
 ### Declaração de Variáveis:
+
 - playerName: Uma variável que será usada para armazenar o nome do jogador.
 - correctAnswers: Uma variável para contar o número de respostas corretas.
 - wrongAnswers: Uma variável para contar o número de respostas erradas.
 - correctAnswersArray: Uma matriz (array) que será usada para armazenar as perguntas para as quais o jogador respondeu corretamente.
-  
+
 ### Função startGame():
+
 - Esta função é chamada quando o jogo começa. Ela obtém o nome do jogador a partir de um campo de entrada no documento HTML, capitaliza a primeira letra e exibe o nome na tela. Em seguida, ela altera a visibilidade de duas seções do jogo: a tela de boas-vindas fica invisível ('none') e a tela do jogo fica visível ('block').
-  
+
 ### Função submitAnswers():
+
 - Esta função é chamada quando o jogador submete suas respostas. Ela zera as variáveis correctAnswers, wrongAnswers e correctAnswersArray. Em seguida, chama a função checkAnswer() para verificar as respostas para três perguntas diferentes (Q.1, Q.2, Q.3). Depois, ela exibe a tela de resultados, mostrando o número de respostas corretas e incorretas, bem como uma lista das perguntas respondidas corretamente.
-  
+
 ### Função checkAnswer(question, correctOption, questionText):
+
 - Esta função verifica a resposta para uma pergunta específica. Ela recebe três parâmetros: o nome da pergunta, a opção correta e o texto da pergunta.
-- Ela obtém as opções de resposta para a pergunta e remove as classes 'correct-answer' e 'wrong-answer' de todas as opções. Ela também redefine a cor de fundo para a cor padrão.
+- Ela obtém as opções de resposta para a pergunta e remove as classes 'correct-answer' and 'wrong-answer' de todas as opções. Ela também redefine a cor de fundo para a cor padrão.
 - Em seguida, verifica qual opção foi selecionada pelo jogador e compara com a opção correta. Se a resposta for correta, adiciona a classe 'correct-answer' à opção selecionada, atualiza a variável correctAnswers e adiciona a pergunta ao array correctAnswersArray. Se a resposta for errada, adiciona a classe 'wrong-answer' à opção selecionada, muda a cor de fundo para vermelho e exibe um alerta com a resposta correta. A variável wrongAnswers também é atualizada.
-  
+
 ### Função restartGame():
+
 - Esta função reinicia o jogo, zerando as variáveis de respostas corretas, erradas e a matriz correctAnswersArray. Também limpa o campo de entrada de nome do jogador e reconfigura os botões de seleção de resposta para cada pergunta.
 - Ela redefine a visibilidade das telas de boas-vindas e de resultados.
-  
-### Função resetRadioButtons(question):
-- Esta função é usada para desmarcar todos os botões de seleção de resposta para uma pergunta específica. Ela é chamada na função restartGame() para garantir que as respostas selecionadas sejam desmarcadas quando o jogo é reiniciado.
+
 
 ### CSS
 - body: Esta seção define o estilo para o elemento <body>, que é o elemento principal de uma página HTML.
